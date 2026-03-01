@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "dev": "ts-node-dev src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js"
-  },
+ "scripts": {
+  "build": "prisma migrate deploy && tsc",
+  "start": "node dist/server.js",
+  "dev": "ts-node src/server.ts"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
